@@ -45,10 +45,10 @@ managemen-pegawai/
      ```
 
 ## Project oleh
-- **Nama**: [Farhan Kurnia]
-- **NIM**: [202310370311486]
+**Nama**: [Farhan Kurnia]
+**NIM**: [202310370311486]
 
-- **Nama**: [Widya Kusuma]
-- **NIM**: [202310370311???]
+**Nama**: [Widya Kusuma]
+**NIM**: [202310370311???]
 
 ---
