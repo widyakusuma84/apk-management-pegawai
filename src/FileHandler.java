@@ -12,17 +12,17 @@ public class FileHandler {
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(";");
                 Pegawai.add(new Pegawai(
-                        data[0], 
-                        data[1], 
-                        Integer.parseInt(data[2]), 
-                        data[3], 
-                        data[4], 
-                        data[5], 
-                        data[6], 
-                        data[7], 
-                        Integer.parseInt(data[8]), 
-                        Double.parseDouble(data[9]), 
-                        data[10] 
+                        data[0], // id
+                        data[1], // nama
+                        Integer.parseInt(data[2]), // umur
+                        data[3], // kelamin
+                        data[4], // no hp
+                        data[5], // email
+                        data[6], // alamat
+                        data[7], // departemen
+                        Integer.parseInt(data[8]), // score
+                        Double.parseDouble(data[9]), // gaji
+                        data[10] // lokasi gambar
                 ));
             }
         } catch (IOException e) {

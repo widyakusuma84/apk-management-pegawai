@@ -1,3 +1,7 @@
+import java.text.NumberFormat;
+import java.text.ParseException;
+import java.util.Locale;
+
 public class Pegawai {
     private String nik;
     private String name;
@@ -39,5 +43,9 @@ public class Pegawai {
     public String getDepartment() { return department; }
     public int getScore() { return score; }
     public double getSalary() { return salary; }
+    public String getSalaryFormatted() {
+        NumberFormat formatter = NumberFormat.getCurrencyInstance(new Locale("id", "ID"));
+        return formatter.format(salary);
+    }
     public String getImagePath() { return imagePath; }
 }
