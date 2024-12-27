@@ -31,7 +31,7 @@ managemen-pegawai/
 1. **Persiapan env**
    - Pastikan Anda memiliki Java Development Kit (JDK) terinstal di komputer Anda.
 
-2. **Clone Repository Ini"
+2. **Clone Repository Ini**
    - lakukan clone repo dengan git clone
    
 4. **RUN**
