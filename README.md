@@ -26,6 +26,17 @@ managemen-pegawai/
 |-- README.md             # File dokumentasi (ini)
 ```
 
+## Cara Menjalankan
+
+1. **Persiapan env**
+   - Pastikan Anda memiliki Java Development Kit (JDK) terinstal di komputer Anda.
+
+2. **Clone Repository Ini"
+   - lakukan clone repo dengan git clone
+   
+4. **RUN**
+   - Buka file run.bat
+
 ## Project oleh
 **Nama**: [Farhan Kurnia]
 **NIM**: [202310370311486]
