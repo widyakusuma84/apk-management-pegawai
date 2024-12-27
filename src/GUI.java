@@ -13,11 +13,11 @@ import java.util.Map;
 public class GUI {
     private static List<Pegawai> Pegawai;
     private static Map<String, String> userCredentials = new HashMap<>();
+    private static final String path = "data/pegawai.txt";
 
     public static void main(String[] args) {
-        userCredentials.put("admin", "admin");
 
-        Pegawai = FileHandler.loadPegawai();
+        Pegawai = FileHandler.loadPegawai(path);
         SwingUtilities.invokeLater(GUI::showLogin);
     }
 
@@ -76,7 +76,8 @@ public class GUI {
      * @param password Kata sandi.
      * @return True jika autentikasi berhasil, sebaliknya false.
      */
-    private static boolean authenticate(String username, String password) {
+    public static boolean authenticate(String username, String password) {
+        userCredentials.put("admin", "admin");
         return userCredentials.containsKey(username) && userCredentials.get(username).equals(password);
     }
 
@@ -294,7 +295,7 @@ public class GUI {
     
                 Pegawai.add(emp);
                 model.addRow(emp.toRow());
-                FileHandler.savePegawai(Pegawai);
+                FileHandler.savePegawai(Pegawai, path);
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(null, "Format angka tidak valid. Check ulang input Umur, Nilai, dan Gaji.", "Error", JOptionPane.ERROR_MESSAGE);
             } catch (Exception ex) {
@@ -403,7 +404,7 @@ public class GUI {
                 model.setValueAt(updatedEmp.getScore(), selectedRow, 8);
                 model.setValueAt(updatedEmp.getSalaryFormatted(), selectedRow, 9);
     
-                FileHandler.savePegawai(Pegawai);
+                FileHandler.savePegawai(Pegawai, path);
     
                 JOptionPane.showMessageDialog(null, "Sukses memperbarui detail pegawai.");
             } catch (NumberFormatException e) {
@@ -432,7 +433,7 @@ public class GUI {
         if (confirm == JOptionPane.YES_OPTION) {
             Pegawai.remove(selectedRow);
             model.removeRow(selectedRow);
-            FileHandler.savePegawai(Pegawai);
+            FileHandler.savePegawai(Pegawai, path);
             JOptionPane.showMessageDialog(null, "Data pegawai sukses dihapus.");
         }
     }

@@ -1,3 +1,4 @@
 77311551;Farhan Kurnia;20;Laki-laki;081132451337;farhan@gmail.com;JL Karyawiguna no. 69;Quality Assurance;96;1.0E7;images/farhan.jpg
 77311552;Wiwid Kusuma;20;Laki-laki;081132451337;wiwid@gmail.com;JL Karyawiguna no. 420;Marketing;96;8000000.0;images/wiwid.jpg
-77311553;Mike;40;Laki-laki;081132451337;mike@gmail.com;malang;Turu;69;700000.0;images/mike.jpg
+77311553;Mike;40;Laki-laki;081132451337;mike@gmail.com;blitar;Turu;69;500000.0;images/mike.jpg
+77311554;Mike2;80;Lainnya???;081132451337;mikeclone@gmail.com;malang;Mangan;50;420000.0;images/mike.jpg

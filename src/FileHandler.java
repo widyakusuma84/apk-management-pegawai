@@ -3,11 +3,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FileHandler {
-    private static final String FILE_NAME = "data/pegawai.txt";
 
-    public static List<Pegawai> loadPegawai() {
+    public static List<Pegawai> loadPegawai(String path) {
         List<Pegawai> Pegawai = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(";");
@@ -31,8 +30,8 @@ public class FileHandler {
         return Pegawai;
     }
 
-    public static void savePegawai(List<Pegawai> Pegawai) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME))) {
+    public static void savePegawai(List<Pegawai> Pegawai, String path) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(path))) {
             for (Pegawai emp : Pegawai) {
                 writer.write(String.join(";", emp.toRow()));
                 writer.newLine();
