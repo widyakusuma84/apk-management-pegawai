@@ -26,24 +26,6 @@ managemen-pegawai/
 |-- README.md             # File dokumentasi (ini)
 ```
 
-## Cara Menjalankan
-
-1. **Persiapan Lingkungan**
-   - Pastikan Anda memiliki Java Development Kit (JDK) terinstal di komputer Anda.
-   - Gunakan editor seperti Visual Studio Code atau IntelliJ IDEA untuk pengalaman terbaik.
-
-2. **Kompilasi dan Eksekusi**
-   - Buka terminal atau command prompt.
-   - Navigasikan ke folder `src`.
-   - Jalankan perintah berikut untuk mengompilasi:
-     ```
-     javac *.java
-     ```
-   - Jalankan program dengan perintah berikut:
-     ```
-     java GUI
-     ```
-
 ## Project oleh
 **Nama**: [Farhan Kurnia]
 **NIM**: [202310370311486]
